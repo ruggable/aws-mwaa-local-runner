@@ -1,0 +1,17 @@
+{
+  "flexport_streams": [
+    {"stream_name": "bookings"},
+    {"stream_name": "booking-line-items"},
+    {"stream_name": "commercial-invoices"},
+    {"stream_name": "invoices"},
+    {"stream_name": "network-locations"},
+    {"stream_name": "purchase-orders"},
+    {"stream_name": "purchase-order-line-items"},
+    {"stream_name": "ports"},
+    {"stream_name": "products"},
+    {"stream_name": "ocean-shipment-containers"},
+    {"stream_name": "ocean-shipment-container-legs"},
+    {"stream_name": "shipments"},
+    {"stream_name": "shipment-legs"}
+  ]
+}

@@ -6,3 +6,8 @@ apache-airflow-providers-http==4.4.2
 apache-airflow-providers-imap==3.2.2
 apache-airflow-providers-postgres==5.5.1
 apache-airflow-providers-sqlite==3.4.2
+apache-airflow-providers-ssh==3.7.1
+airflow-provider-fivetran-async==2.1.0
+apache-airflow-providers-dbt-cloud==3.2.1
+apache-airflow-providers-slack==7.3.1
+apache-airflow-providers-snowflake==4.2.0

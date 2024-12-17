@@ -21,15 +21,19 @@ services:
         environment:
             - LOAD_EX=n
             - EXECUTOR=Local
+            - AIRFLOW__CORE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
         logging:
             options:
                 max-size: 10m
                 max-file: "3"
         volumes:
             - "${PWD}/dags:/usr/local/airflow/dags"
+            - "${PWD}/connections:/usr/local/airflow/connections"
+            - "${PWD}/variables:/usr/local/airflow/variables"
             - "${PWD}/plugins:/usr/local/airflow/plugins"
             - "${PWD}/requirements:/usr/local/airflow/requirements"
             - "${PWD}/startup_script:/usr/local/airflow/startup"
+            - "${HOME}/.aws:/usr/local/airflow/.aws"
         ports:
             - "8080:8080"
         command: local-runner
